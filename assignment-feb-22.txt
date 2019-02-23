@@ -1,0 +1,57 @@
+1)What are primitive data types?
+Ans:-
+There are 8 types of primitive data types.
+
+Primitive data types:     Size
+---------------------     -------
+  
+1)boolean type---- 1bit
+2)char type ----   2 byte
+3)byte data type---1byte
+4)short data type--2byte
+5)int data type----4byte
+6)long data type.--8byte
+7)float data type--4byte
+8)double data type-8byte
+
+2)Wrapper  types:         Size  
+---------------------     ---- 
+1)Boolean  
+2)Character ---- 16bit
+3)Byte      ---- 8bit
+4)Short     ---- 16bit
+5)Integer   ---- 32bit
+6)Long      ---- 64bit
+7)Float     ---- 32bit
+8)Double    ---- 64bit
+
+3) Convert primitive type to wrapper type and viceversa.
+------------------------------------------
+The process of converting a primitive data type to it's corresponding  wrapper class object is known as Autoboxing. For example int to Integer. 
+package oops.practice;
+
+public class WrapperDemo {
+	public static void main(String[] args) {
+		System.out.println("Example of autoboxing");
+		int a = 100;
+		Integer b = Integer.valueOf(a);
+		Integer c = a + b;
+		System.out.println("a :" + a + " b:" + b + " c:" + c);
+		
+	
+	}
+}
+
+The Process of converting wrapper class object into its primitive type is known as unboxing.For example Integer to int.
+
+
+public class WrapperDemo1 {
+	public static void main(String[] args) {
+    
+		System.out.println("Example of Unboxing");
+		Integer x = new Integer(15);
+		int y = x.intValue();
+		int z = x * y;
+		System.out.println("x: " + x + " y: " + y + " z: " + z);
+}
+}
